@@ -20,7 +20,7 @@ En esta fase se establecen las fuentes de datos y se crean las consultas necesar
   - estandarizar nombres y tipos de datos,
   - crear la base del modelo antes de pasarlo a Power Pivot.
 
-![Creación de consultas](ruta_a_imagen_creacion_consultas.png)
+<img width="1321" height="442" alt="image" src="https://github.com/user-attachments/assets/5cac18cf-3d62-4edd-9936-e27b928a6f46" />
 
 ## 3. Configuración de consultas para modelado
 
@@ -31,13 +31,10 @@ Aquí se aplican las transformaciones necesarias para dejar las tablas listas pa
   - `CustomerKey` en `dim_cliente`
   - `OrderDateKey` en `dim_fechaVenta`
   - `ShipDateKey` en `dim_fechaEnvio`
-- Verificar tipos de datos:
-  - fechas como Date,
-  - cantidades y montos como Number,
-  - nombres y categorías como Text.
-- Eliminar columnas innecesarias y mantener sólo las llaves y atributos relevantes.
+- Verificar tipos de datos y eliminar columnas innecesarias
 
-![Configuración de consultas](ruta_a_imagen_configuracion_consultas.png)
+<img width="932" height="701" alt="image" src="https://github.com/user-attachments/assets/21e49e5c-d8f5-4999-bbcf-60df8c8aef35" />
+
 
 ## 4. Revisión de tablas en modelado
 
@@ -77,7 +74,8 @@ Antes de crear las relaciones, se revisan los datos y la estructura de cada tabl
   - `Ship Date`
   - `Nombre del mes`
 
-![Revisión de tablas](ruta_a_imagen_revision_tablas.png)
+<img width="972" height="357" alt="image" src="https://github.com/user-attachments/assets/d220c067-0107-43d9-9f16-88bedea602e6" />
+
 
 ## 5. Vista de diagrama completo
 
@@ -90,7 +88,8 @@ En la vista de diagrama de Power Pivot se observan las relaciones entre hechos y
 
 Esta vista permite validar que el modelo tiene la forma de estrella y que cada dimensión está correctamente conectada a la tabla de hechos.
 
-![Vista de diagrama completo](ruta_a_imagen_diagrama_completo.png)
+<img width="1228" height="711" alt="image" src="https://github.com/user-attachments/assets/9bd9fe0e-e44f-4f46-8fc4-b608af8ce488" />
+
 
 ## 6. Respuestas a preguntas clave
 
@@ -101,36 +100,37 @@ A continuación se muestra el espacio para las tablas dinámicas que deben respo
 - Dimensiones: `Category`, `Nombre del mes`
 - Métrica: `SalesAmount` o `Quantity`
 
-![Tabla dinámica categoría y mes](ruta_a_imagen_tabla_dinamica_categoria_mes.png)
+<img width="465" height="222" alt="image" src="https://github.com/user-attachments/assets/00a3f804-da2b-4d7d-a04b-b81a7a809d9e" />
+
 
 ### 6.2 ¿Cuál es el ingreso total (ventas) por cliente y género?
 
 - Dimensiones: `CustomerKey` / `Gender`
 - Métrica: `SalesAmount`
 
-![Tabla dinámica cliente y género](ruta_a_imagen_tabla_dinamica_cliente_genero.png)
+<img width="338" height="82" alt="image" src="https://github.com/user-attachments/assets/7c240bb6-1cc7-4623-84e3-707e083b8f26" />
 
 ### 6.3 ¿Cuál es la cantidad total vendida por producto?
 
 - Dimensión: `Product Name`
 - Métrica: `Quantity`
 
-![Tabla dinámica producto cantidad](ruta_a_imagen_tabla_dinamica_producto_cantidad.png)
+<img width="397" height="167" alt="image" src="https://github.com/user-attachments/assets/713a7ac6-2d92-4943-8840-ab4233b1e76a" />
 
 ### 6.4 ¿Cuál fue la cantidad enviada por mes de envío?
 
 - Dimensión: `Nombre del mes` de `dim_fechaEnvio`
 - Métrica: `Quantity`
 
-![Tabla dinámica mes envío](ruta_a_imagen_tabla_dinamica_mes_envio.png)
+<img width="1138" height="221" alt="image" src="https://github.com/user-attachments/assets/73bed463-07bd-47e4-821d-e344b15e080d" />
+
 
 ### 6.5 ¿Cuánto se vendió por tamaño de producto y por estado civil del cliente?
 
 - Dimensiones: `Size`, `Marital Status`
 - Métrica: `SalesAmount`
 
-![Tabla dinámica tamaño y estado civil](ruta_a_imagen_tabla_dinamica_tamano_estado_civil.png)
+<img width="497" height="122" alt="image" src="https://github.com/user-attachments/assets/9b22802b-e8c6-496d-97e1-b6ead4114b28" />
 
-## 7. Conclusión
 
-El informe queda estructurado para que los pasos del modelado y las comprobaciones se documenten junto a las imágenes de soporte. La sección final permite un seguimiento directo de los resultados esperados en cada tabla dinámica.
+
